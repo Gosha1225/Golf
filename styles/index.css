@@ -1,0 +1,313 @@
+.scalable-wrapper {
+  resize: both;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #4f4f4f;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.scalable-wrapper__content {
+  width: 1080px;
+  height: 1920px;
+  background: rgb(243, 243, 243);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+}
+
+.first-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.background-container {
+  position: absolute;
+  width: 100%;
+}
+
+.board {
+  top: 245px;
+  left: 88px;
+}
+
+.stone1 {
+  top: 543px;
+  left: 760px;
+}
+
+.stone2 {
+  top: 705px;
+  left: 0px;
+}
+
+.stone3 {
+  top: 0px;
+  left: 0px;
+}
+
+.stone4 {
+  top: 40px;
+  left: 365px;
+}
+
+.cactus1 {
+  top: 370px;
+  left: -46px;
+  transform: scale(0.5) rotate(15deg);
+}
+
+.cactus2 {
+  top: 1707px;
+  left: 987px;
+  transform: scale(0.5) rotate(345deg);
+}
+
+.info-container {
+  position: absolute;
+  width: 100%;
+}
+
+.playground {
+  position: absolute;
+  top: 270px;
+  width: 850px;
+  height: 1650px;
+}
+
+.cactus-container1 {
+  position: absolute;
+  top: 690px;
+  left: 451px;
+  width: 159px;
+  height: 159px;
+  transform: rotate(0deg);
+}
+
+.cactus-container2 {
+  position: absolute;
+  top: 935px;
+  left: 198px;
+  width: 159px;
+  height: 159px;
+  transform: rotate(0deg);
+}
+
+.cactus-container3 {
+  position: absolute;
+  top: 1116px;
+  left: 463px;
+  width: 159px;
+  height: 159px;
+  transform: rotate(0deg);
+}
+
+.left-collision {
+  position: absolute;
+  width: 20px;
+  height: 145px;
+  top: 10px;
+  left: 0px;
+}
+
+.top-collision {
+  position: absolute;
+  width: 145px;
+  height: 20px;
+  top: 0px;
+  left: 10px;
+}
+
+.right-collision {
+  position: absolute;
+  width: 20px;
+  height: 145px;
+  top: 10px;
+  left: 139px;
+}
+
+.bottom-collision {
+  position: absolute;
+  width: 145px;
+  height: 20px;
+  top: 139px;
+  left: 10px;
+}
+
+.pg-cactus1 {
+  position: absolute;
+  top: 410px;
+  left: 332px;
+  transform: rotate(0deg);
+}
+
+.pg-cactus2 {
+  position: absolute;
+  top: 835px;
+  left: 341px;
+  transform: rotate(0deg);
+}
+
+.pg-cactus3 {
+  position: absolute;
+  top: 656px;
+  left: 82px;
+  transform: rotate(0deg);
+}
+
+.strength-field {
+  position: absolute;
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 360px;
+  top: 1590px;
+  left: 483px;
+}
+
+.yellow {
+  position: absolute;
+  transform-origin: top center;
+  width: 100px;
+  left: 0px;
+  height: 0px;
+  max-height: 150px;
+  background-color: yellow;
+  border-radius: 25px;
+}
+
+.green {
+  position: absolute;
+  transform-origin: top center;
+  width: 100px;
+  left: 0px;
+  height: 0px;
+  max-height: 260px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 25px;
+}
+
+.red {
+  position: absolute;
+  transform-origin: top center;
+  width: 100px;
+  left: 0px;
+  height: 0px;
+  max-height: 360px;
+  background-color: red;
+  border-radius: 25px;
+}
+
+.start {
+  top: 1657px;
+  left: 335px;
+}
+
+.ball {
+  transform-origin: center;
+  transform: rotate(180deg) translateY(0px) translateX(0px);
+  top: 1563px;
+  left: 490px;
+}
+
+.hole-img {
+  top: 170px;
+  left: 370px;
+}
+
+.boarder {
+  position: absolute;
+}
+
+.hole-collision {
+  position: absolute;
+  top: 438px;
+  left: 482px;
+  width: 92px;
+  height: 92px;
+}
+
+.boarder1 {
+  top: 247px;
+  left: -52px;
+  width: 170px;
+  height: 1674px;
+}
+
+.boarder2 {
+  top: 247px;
+  left: 960px;
+  width: 170px;
+  height: 1674px;
+}
+
+.boarder3 {
+  top: 102px;
+  left: 92px;
+  width: 900px;
+  height: 170px;
+}
+
+.boarder4 {
+  top: 1912px;
+  left: 92px;
+  width: 900px;
+  height: 170px;
+}
+
+.final-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* top: 0px; */
+  top: -1920px;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 130px;
+}
+
+.final-screen p {
+  position: absolute;
+  top: 500px;
+}
+
+.download {
+  position: absolute;
+  top: 1300px;
+}
+
+.app-store {
+  position: absolute;
+  top: 1540px;
+}
+
+.hand {
+  top: 1620px;
+  left: 496px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
